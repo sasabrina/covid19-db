@@ -1,0 +1,12 @@
+@import '../../styles/mixins';
+
+.countries-container{
+    @include main_container;
+    margin: 20px 0;
+    padding: 55px;
+}
+
+th.head-text{
+    font-weight: bold;
+    cursor: default;
+}

@@ -1,0 +1,12 @@
+form{ 
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .btn-form{
+        min-height: 100px;
+        padding: 0 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../styles/mixins';
+
+.infected-container{
+    @include main_container;
+    padding: 55px;
+
+    .header-infected, .buttons-infected{
+        padding: 0 0 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-infected{
+        justify-content: space-between;
+    }
+    .buttons-infected{
+        min-width: 150px;
+        justify-content: space-evenly;
+        button{
+            font-weight: bold;
+        }
+
+        .btn-modal{
+            background-color: #fff;
+
+        }
+    }
+}
+
+.grey-row{
+    td{
+        color: #cec6c6;
+    }
+}
+
+th.head-text{
+    font-weight: bold;
+}
+
+th.sort-class{
+    &::febore{
+        content: '↕';
+    }
+}

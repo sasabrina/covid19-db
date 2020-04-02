@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+section{
+    font-family: 'PT Sans Narrow', sans-serif;
+    height: calc(100vh - 50px);
+
+    
+
+    .header-container{
+        height: calc(100% - 270px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        letter-spacing: 2px;
+
+        h1{
+            font-size: 58px;
+        }
+
+        p{
+            font-size: 38px;
+        }
+        h1, p{
+            margin: 0;
+        }
+    }
+}
