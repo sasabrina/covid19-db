@@ -1,7 +1,7 @@
 // Funciones que manipulan data de la api para mostrar en la tabla
 const isAlive = x => x.live ? "" : "grey-row";
 
-const createGenre = x => x.female ? "Female" : "Male"
+const createGender = x => x.female ? "Female" : "Male"
 
 const createDate = x => {
     let date = x.infect_date ? new Date(x.infect_date) : null
@@ -10,7 +10,7 @@ const createDate = x => {
 
 
 // Nombres de las columnas de la tabla
-const tableHeadData = ['Name', 'Last Name', 'Country', 'Age', 'Genre', 'Infect Date']
+const tableHeadData = ['Name', 'Last Name', 'Country', 'Age', 'Gender', 'Infect Date']
 
 
 // Función para ordenar la tabla por edad
@@ -24,4 +24,4 @@ const handleSort = (hookDirection, hookType, setter, data) => {
 const ascSorted = data => data.sort((a, b) => a.age - b.age)
 const descSorted = data => data.sort((a, b) => a.age < b.age ? 1 : -1)
 
-export { isAlive, createGenre, createDate, tableHeadData, handleSort }
+export { isAlive, createGender, createDate, tableHeadData, handleSort }

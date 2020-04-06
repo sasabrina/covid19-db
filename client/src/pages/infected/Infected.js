@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { TableRow, TableCell, Paper, Typography, makeStyles } from '@material-ui/core'
 import { Header, CustomTable, ExportCVS, FormModal } from '../../components/index'
-import { isAlive, createGenre, createDate, tableHeadData, handleSort } from '../../helpers/infected'
+import { isAlive, createGender, createDate, tableHeadData, handleSort } from '../../helpers/infected'
 import { getData } from '../../helpers/index'
 import './Infected.scss'
 
@@ -31,7 +31,7 @@ const Infected = () => {
             <TableCell>{d.last_name}</TableCell>
             <TableCell>{d.country}</TableCell>
             <TableCell>{d.age}</TableCell>
-            <TableCell>{createGenre(d)}</TableCell>
+            <TableCell>{createGender(d)}</TableCell>
             <TableCell>{createDate(d)}</TableCell>
         </TableRow>
     )
